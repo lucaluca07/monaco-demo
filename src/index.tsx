@@ -5,9 +5,10 @@ import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
 import store from "./app/store";
 import "./index.css";
+import "./iconfont.css";
 
 function render() {
-  const App = require("./app/App").default;
+  const App = require("./app/index").default;
   ReactDOM.render(
     <Provider store={store}>
       <App />
@@ -19,7 +20,7 @@ function render() {
 render();
 
 if (process.env.NODE_ENV === "development" && module.hot) {
-  module.hot.accept("./app/App", render);
+  module.hot.accept("./app/index", render);
 }
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

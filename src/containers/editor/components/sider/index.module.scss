@@ -1,0 +1,21 @@
+.sider {
+  color: #fafafa;
+  :global {
+    .ant-tree {
+      background: transparent !important;
+    }
+    .ant-tree-treenode {
+      color: #fafafa !important;
+      &:hover {
+        background: #2c313a;
+      }
+    }
+
+    .ant-tree.ant-tree-directory .ant-tree-treenode:hover::before {
+      background:  #2c313a;
+    }
+    .ant-tree-treenode-selected::before {
+      background: #2c313a !important;
+    }
+  }
+}

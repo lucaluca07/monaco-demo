@@ -1,0 +1,28 @@
+.app {
+  display: flex;
+  height: 100vh;
+  .sider {
+    flex: 0 0 50px;
+    background-color: #292c34;
+    flex-direction: column
+  }
+  .icon {
+    color: #6e7179;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    :global {
+      .iconfont {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .icon-active {
+    color: #d7dae9
+  }
+  .content {
+    flex: 1;
+    overflow: hidden;
+  }
+}
