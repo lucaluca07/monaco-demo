@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import * as monaco from "monaco-editor";
-import light from '../../themes/light';
-import dark from '../../themes/dark';
-import monokai from '../../themes/dark';
+import light from './themes/light';
+import dark from './themes/dark';
+import monokai from './themes/dark';
 import './index.scss'
 
 monaco.editor.defineTheme('light', light);
